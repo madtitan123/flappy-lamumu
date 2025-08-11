@@ -21,8 +21,10 @@
 
         #game-container {
             position: relative;
-            width: 400px;
-            height: 600px;
+            width: 90vw;          /* Responsive width: 90% of viewport width */
+            max-width: 400px;     /* Max width on larger screens */
+            height: calc(90vw * 1.5); /* Keep 2:3 aspect ratio */
+            max-height: 600px;    /* Max height on larger screens */
             overflow: hidden;
             background: #70c5ce;
             border: 8px solid #003a70;
